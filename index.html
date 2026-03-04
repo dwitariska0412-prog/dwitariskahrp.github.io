@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Sekolah Ceria</title>
+    <title>Perpustakaan Sekolah</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- NAVBAR -->
     <nav class="navbar">
-        <div class="logo">📚 PerpusCeria</div>
-        <ul class="nav-links">
+        <div class="logo">📚 Perpus Sekolah</div>
+        <ul class="nav-menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#koleksi">Koleksi</a></li>
             <li><a href="#tentang">Tentang Kami</a></li>
@@ -21,65 +21,58 @@
         </ul>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section id="home" class="hero">
-        <div class="hero-content">
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-text">
             <h1>Selamat Datang di Perpustakaan Sekolah</h1>
-            <p>Tempat belajar, membaca, dan menemukan inspirasi setiap hari ✨</p>
-            <a href="#koleksi" class="btn-primary">Lihat Koleksi</a>
+            <p>Membaca hari ini, sukses di masa depan ✨</p>
+            <a href="#koleksi" class="btn-primary">Jelajahi Buku</a>
         </div>
     </section>
 
     <!-- KOLEKSI -->
-    <section id="koleksi" class="section">
+    <section class="section" id="koleksi">
         <h2>Koleksi Buku</h2>
-        <div class="card-container">
+        <div class="cards">
             <div class="card">
-                <h3>Buku Pelajaran</h3>
-                <p>Koleksi lengkap buku kurikulum terbaru.</p>
+                <h3>📘 Buku Pelajaran</h3>
+                <p>Koleksi lengkap sesuai kurikulum terbaru.</p>
             </div>
             <div class="card">
-                <h3>Novel Remaja</h3>
-                <p>Bacaan menarik dan inspiratif untuk siswa.</p>
+                <h3>📖 Novel Remaja</h3>
+                <p>Bacaan menarik dan inspiratif.</p>
             </div>
             <div class="card">
-                <h3>Ensiklopedia</h3>
-                <p>Sumber referensi pengetahuan umum.</p>
+                <h3>📚 Ensiklopedia</h3>
+                <p>Sumber referensi terpercaya.</p>
             </div>
         </div>
     </section>
 
     <!-- TENTANG -->
-    <section id="tentang" class="section alt">
+    <section class="section bg-light" id="tentang">
         <h2>Tentang Kami</h2>
         <p>
-            Perpustakaan sekolah kami hadir untuk meningkatkan literasi siswa
-            melalui koleksi buku yang lengkap dan suasana ruang baca yang nyaman.
+            Perpustakaan sekolah kami menyediakan fasilitas ruang baca nyaman,
+            layanan peminjaman cepat, dan koleksi buku berkualitas untuk mendukung literasi siswa.
         </p>
     </section>
 
     <!-- LAYANAN -->
-    <section id="layanan" class="section">
+    <section class="section" id="layanan">
         <h2>Layanan</h2>
-        <ul class="layanan-list">
-            <li>Peminjaman Buku</li>
-            <li>Pengembalian Buku</li>
-            <li>Ruang Baca Nyaman</li>
-            <li>Kartu Anggota</li>
-        </ul>
-    </section>
-
-    <!-- ADMIN -->
-    <section id="admin" class="section alt">
-        <h2>Admin Perpustakaan</h2>
-        <p>Login khusus petugas untuk mengelola data buku dan anggota.</p>
-        <button class="btn-secondary">Login Admin</button>
+        <div class="layanan-box">
+            <div>Peminjaman Buku</div>
+            <div>Pengembalian Buku</div>
+            <div>Kartu Anggota</div>
+            <div>Ruang Baca</div>
+        </div>
     </section>
 
     <!-- DAFTAR -->
-    <section id="daftar" class="section">
+    <section class="section bg-light" id="daftar">
         <h2>Daftar Anggota</h2>
-        <form class="form-daftar">
+        <form class="form">
             <input type="text" placeholder="Nama Lengkap">
             <input type="email" placeholder="Email">
             <input type="text" placeholder="Kelas">
@@ -89,7 +82,7 @@
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Perpustakaan Sekolah Ceria | Website Edukatif</p>
+        <p>© 2026 Perpustakaan Sekolah | Website Edukatif</p>
     </footer>
 
 </body>
