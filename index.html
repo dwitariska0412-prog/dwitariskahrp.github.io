@@ -1,55 +1,226 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tariska Library</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Perpustakaan Sekolah</title>
+
+  <!-- CSS -->
+  <style>
+    /* ===== VARIABEL WARNA ===== */
+    :root {
+      --navy: #1d3557;
+      --light-blue: #457b9d;
+      --white: #ffffff;
+      --gray: #f0f0f0;
+      --gold: #e9c46a;
+      --black: #000000;
+    }
+
+    /* ===== GLOBAL ===== */
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background: var(--gray);
+      color: var(--black);
+      line-height: 1.6;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .container {
+      max-width: 1150px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 15px 0;
+      margin-bottom: 30px;
+    }
+    header .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+    }
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      background: var(--light-blue);
+      padding: 60px 0;
+      text-align: center;
+      color: var(--white);
+      margin-bottom: 40px;
+    }
+    .hero h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    /* ===== SECTIONS ===== */
+    section {
+      margin-bottom: 40px;
+    }
+    h2.section-title {
+      color: var(--navy);
+      text-align: center;
+      margin-bottom: 18px;
+      font-size: 1.8rem;
+    }
+
+    /* ===== KATALOG BUKU ===== */
+    .books {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 18px;
+    }
+    .book-card {
+      background: var(--white);
+      border-radius: 8px;
+      padding: 15px;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+    .book-card img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    .book-card h4 {
+      font-size: 1rem;
+      margin-bottom: 8px;
+      color: var(--navy);
+    }
+    .book-card p {
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--navy);
+      color: var(--white);
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+      font-size: 0.9rem;
+    }
+
+    /* ===== TOMBOL ===== */
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: var(--gold);
+      color: var(--navy);
+      font-weight: bold;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #d4af37;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <div class="logo">Tariska Library</div>
-    <nav>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <div class="logo">Perpustakaan SMA Negeri 1</div>
+      <nav>
         <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#">Layanan</a></li>
-            <li><a href="#">Koleksi</a></li>
-            <li><a href="#">Berita</a></li>
+          <li><a href="#beranda">Beranda</a></li>
+          <li><a href="#tentang">Tentang</a></li>
+          <li><a href="#katalog">Katalog Buku</a></li>
+          <li><a href="#jam">Jam Operasional</a></li>
+          <li><a href="#kontak">Kontak</a></li>
         </ul>
-    </nav>
-</header>
-
-<section class="hero">
-    <h1>Welcome to Tariska Library</h1>
-    <p>
-        Pusat literasi modern yang menghadirkan inovasi perpustakaan digital, 
-        pengelolaan informasi profesional, dan akses pengetahuan tanpa batas.
-    </p>
-    <a href="cv.html" class="btn-primary">Lihat Curriculum Vitae</a>
-</section>
-
-<section class="video-section">
-    <h2>Video Profil</h2>
-    <div class="video-wrapper">
-        <iframe 
-            src="https://www.youtube.com/embed/pNQ3BbLB7_U"
-            title="Video Profil Tariska"
-            frameborder="0"
-            allowfullscreen>
-        </iframe>
+      </nav>
     </div>
+  </header>
 
-    <div class="video-link">
-        <a href="https://youtu.be/pNQ3BbLB7_U?si=roUnQp9VBVIw2X9i" target="_blank">
-            Tonton langsung di YouTube
-        </a>
+  <!-- HERO / JUMBOTRON -->
+  <section class="hero" id="beranda">
+    <div class="container">
+      <h1>Selamat Datang di Perpustakaan</h1>
+      <p>Temukan buku favoritmu dan tingkatkan pengetahuan!</p>
+      <a class="btn" href="#katalog">Lihat Katalog Buku</a>
     </div>
-</section>
+  </section>
 
-<footer>
-    <p>© 2026 Tariska Library | All Rights Reserved</p>
-</footer>
+  <!-- TENTANG -->
+  <section id="tentang">
+    <div class="container">
+      <h2 class="section-title">Tentang Perpustakaan</h2>
+      <p>Perpustakaan SMA Negeri 1 menyediakan ribuan buku referensi pelajaran, literatur umum serta fasilitas belajar yang nyaman untuk siswa.</p>
+    </div>
+  </section>
+
+  <!-- KATALOG BUKU -->
+  <section id="katalog">
+    <div class="container">
+      <h2 class="section-title">Katalog Buku</h2>
+      <div class="books">
+        <!-- contoh buku -->
+        <div class="book-card">
+          <img src="https://via.placeholder.com/180x230" alt="Buku 1">
+          <h4>Matematika SMA</h4>
+          <p>Pengarang: A. Budi</p>
+        </div>
+        <div class="book-card">
+          <img src="https://via.placeholder.com/180x230" alt="Buku 2">
+          <h4>Bahasa Indonesia</h4>
+          <p>Pengarang: C. Sari</p>
+        </div>
+        <div class="book-card">
+          <img src="https://via.placeholder.com/180x230" alt="Buku 3">
+          <h4>Sejarah Dunia</h4>
+          <p>Pengarang: D. Rahman</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JAM OPERASIONAL -->
+  <section id="jam">
+    <div class="container">
+      <h2 class="section-title">Jam Operasional</h2>
+      <p>Senin – Jumat: 07.30 – 15.00</p>
+      <p>Sabtu: 08.00 – 12.00</p>
+      <p>Minggu: Libur</p>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak">
+    <div class="container">
+      <h2 class="section-title">Kontak</h2>
+      <p>Email: perpustakaan@smanegeri1.sch.id</p>
+      <p>Telepon: (021) 123-4567</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 Perpustakaan SMA Negeri 1 - All Rights Reserved
+  </footer>
 
 </body>
 </html>
