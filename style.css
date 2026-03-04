@@ -6,55 +6,54 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background: #f4f9ff;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f9ff;
 }
 
 /* NAVBAR */
 .navbar {
-    background: #3b82f6; /* biru soft */
+    background: #3b82f6;
     padding: 15px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .logo {
     color: white;
-    font-weight: bold;
     font-size: 20px;
+    font-weight: bold;
 }
 
-.nav-menu {
+.menu {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
-.nav-menu a {
+.menu a {
     text-decoration: none;
     color: white;
     font-weight: 500;
     transition: 0.3s;
 }
 
-.nav-menu a:hover {
-    color: #ffe066; /* kuning soft */
+.menu a:hover {
+    color: #ffe066;
 }
 
-.btn-daftar {
-    background: #ff9f43; /* orange soft */
-    padding: 6px 15px;
+.btn-nav {
+    background: #ff9f43;
+    padding: 6px 14px;
     border-radius: 20px;
 }
 
 /* HERO */
 .hero {
     background: linear-gradient(to right, #ffe066, #3b82f6);
-    padding: 120px 20px;
-    text-align: center;
     color: white;
+    text-align: center;
+    padding: 120px 20px;
 }
 
 .hero h1 {
@@ -63,22 +62,17 @@ body {
 }
 
 .hero p {
-    font-size: 18px;
     margin-bottom: 20px;
+    font-size: 18px;
 }
 
-.btn-primary {
+.btn {
     background: #ff9f43;
     padding: 12px 25px;
-    border-radius: 30px;
-    text-decoration: none;
+    border-radius: 25px;
     color: white;
+    text-decoration: none;
     font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn-primary:hover {
-    background: #ff7f00;
 }
 
 /* SECTION */
@@ -87,8 +81,8 @@ body {
     text-align: center;
 }
 
-.bg-light {
-    background: #fef9e7;
+.bg-soft {
+    background: #fff8dc;
 }
 
 h2 {
@@ -96,8 +90,8 @@ h2 {
     color: #3b82f6;
 }
 
-/* CARDS */
-.cards {
+/* CARD */
+.card-container {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -107,28 +101,28 @@ h2 {
 .card {
     background: white;
     padding: 25px;
-    width: 280px;
+    width: 260px;
     border-radius: 15px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-8px);
 }
 
 /* LAYANAN */
-.layanan-box {
+.layanan {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.layanan-box div {
+.layanan div {
     background: #3b82f6;
     color: white;
-    padding: 15px 25px;
+    padding: 15px 20px;
     border-radius: 10px;
 }
 
@@ -142,7 +136,7 @@ h2 {
 }
 
 .form input {
-    padding: 12px;
+    padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
@@ -166,4 +160,5 @@ footer {
     color: white;
     text-align: center;
     padding: 20px;
+    margin-top: 30px;
 }
