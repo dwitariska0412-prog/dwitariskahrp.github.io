@@ -1,91 +1,158 @@
-/* ------------------ RESET ------------------ */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ------------------ FONT ------------------ */
 body {
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9fbff;
     color: #333;
 }
 
-/* ------------------ UTILITY ------------------ */
-.container {
-    width: 90%;
-    max-width: 1000px;
-    margin: auto;
+/* NAVBAR */
+.navbar {
+    background: #4a90e2; /* biru soft */
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* ------------------ HERO ------------------ */
+.logo {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #ffe082; /* kuning soft */
+}
+
+.btn-daftar {
+    background: #ffb74d; /* orange soft */
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+/* HERO */
 .hero {
-    background: linear-gradient(
-        to bottom right,
-        #f7f2e9,
-        #e5dbc3
-    );
+    background: linear-gradient(to right, #ffe082, #81d4fa);
+    padding: 100px 20px;
     text-align: center;
-    padding: 80px 20px;
-    color: #2c2c2c;
 }
 
 .hero h1 {
-    font-size: 2.8rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
 }
 
 .btn-primary {
-    background-color: #5a7551;
-    color: #fff;
-    padding: 10px 24px;
+    background: #ffb74d;
+    padding: 10px 20px;
+    border-radius: 25px;
     text-decoration: none;
-    border-radius: 4px;
+    color: white;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #4b613f;
+    background: #ffa726;
 }
 
-/* ------------------ SECTIONS ------------------ */
-.section-light {
-    background-color: #f7f7f7;
-    padding: 40px 0;
+/* SECTION */
+.section {
+    padding: 60px 10%;
+    text-align: center;
 }
 
-.section-white {
-    background-color: #fff;
-    padding: 40px 0;
+.alt {
+    background-color: #f1f8ff;
 }
 
 h2 {
+    margin-bottom: 30px;
     font-size: 2rem;
-    margin-bottom: 15px;
-    color: #444;
+    color: #4a90e2;
 }
 
-/* ------------------ LIST BUKU ------------------ */
-.book-list {
-    list-style-type: square;
-    padding-left: 20px;
+/* CARD */
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
-.book-list li {
-    margin-bottom: 8px;
+.card {
+    background: white;
+    padding: 20px;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-/* ------------------ FOOTER ------------------ */
-.footer {
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* LAYANAN */
+.layanan-list {
+    list-style: none;
+    line-height: 2;
+}
+
+/* FORM */
+.form-daftar {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.form-daftar input {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.form-daftar button {
+    background: #4a90e2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form-daftar button:hover {
+    background: #357abd;
+}
+
+/* FOOTER */
+footer {
+    background: #4a90e2;
+    color: white;
     text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    background-color: #e5dbc3;
-    color: #333;
+    padding: 15px;
 }
