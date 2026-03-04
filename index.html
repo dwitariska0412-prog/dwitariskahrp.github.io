@@ -2,88 +2,86 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
+    <title>Perpustakaan Sekolah Ceria</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perpustakaan Sekolah</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav class="navbar">
-        <div class="logo">📚 Perpus Sekolah</div>
-        <ul class="nav-menu">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#koleksi">Koleksi</a></li>
-            <li><a href="#tentang">Tentang Kami</a></li>
-            <li><a href="#layanan">Layanan</a></li>
-            <li><a href="#admin">Admin</a></li>
-            <li><a href="#daftar" class="btn-daftar">Daftar</a></li>
-        </ul>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">📚 PerpusCeria</div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#koleksi">Koleksi</a></li>
+        <li><a href="#tentang">Tentang Kami</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="cv.html">Admin</a></li>
+        <li><a href="#daftar" class="btn-nav">Daftar</a></li>
+    </ul>
+</nav>
 
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="hero-text">
-            <h1>Selamat Datang di Perpustakaan Sekolah</h1>
-            <p>Membaca hari ini, sukses di masa depan ✨</p>
-            <a href="#koleksi" class="btn-primary">Jelajahi Buku</a>
+<!-- HERO -->
+<section class="hero">
+    <h1>Selamat Datang di Perpustakaan Sekolah</h1>
+    <p>Membaca hari ini, sukses di masa depan ✨</p>
+    <a href="#koleksi" class="btn">Jelajahi Buku</a>
+</section>
+
+<!-- KOLEKSI -->
+<section id="koleksi" class="section">
+    <h2>Koleksi Buku</h2>
+    <div class="card-container">
+        <div class="card">
+            <h3>📘 Buku Pelajaran</h3>
+            <p>Koleksi lengkap sesuai kurikulum terbaru.</p>
         </div>
-    </section>
-
-    <!-- KOLEKSI -->
-    <section class="section" id="koleksi">
-        <h2>Koleksi Buku</h2>
-        <div class="cards">
-            <div class="card">
-                <h3>📘 Buku Pelajaran</h3>
-                <p>Koleksi lengkap sesuai kurikulum terbaru.</p>
-            </div>
-            <div class="card">
-                <h3>📖 Novel Remaja</h3>
-                <p>Bacaan menarik dan inspiratif.</p>
-            </div>
-            <div class="card">
-                <h3>📚 Ensiklopedia</h3>
-                <p>Sumber referensi terpercaya.</p>
-            </div>
+        <div class="card">
+            <h3>📖 Novel Remaja</h3>
+            <p>Bacaan menarik dan inspiratif.</p>
         </div>
-    </section>
-
-    <!-- TENTANG -->
-    <section class="section bg-light" id="tentang">
-        <h2>Tentang Kami</h2>
-        <p>
-            Perpustakaan sekolah kami menyediakan fasilitas ruang baca nyaman,
-            layanan peminjaman cepat, dan koleksi buku berkualitas untuk mendukung literasi siswa.
-        </p>
-    </section>
-
-    <!-- LAYANAN -->
-    <section class="section" id="layanan">
-        <h2>Layanan</h2>
-        <div class="layanan-box">
-            <div>Peminjaman Buku</div>
-            <div>Pengembalian Buku</div>
-            <div>Kartu Anggota</div>
-            <div>Ruang Baca</div>
+        <div class="card">
+            <h3>📚 Ensiklopedia</h3>
+            <p>Sumber referensi terpercaya untuk siswa.</p>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- DAFTAR -->
-    <section class="section bg-light" id="daftar">
-        <h2>Daftar Anggota</h2>
-        <form class="form">
-            <input type="text" placeholder="Nama Lengkap">
-            <input type="email" placeholder="Email">
-            <input type="text" placeholder="Kelas">
-            <button type="submit">Daftar Sekarang</button>
-        </form>
-    </section>
+<!-- TENTANG -->
+<section id="tentang" class="section bg-soft">
+    <h2>Tentang Kami</h2>
+    <p>
+        Perpustakaan sekolah kami menyediakan ruang baca nyaman,
+        layanan peminjaman mudah, serta koleksi buku edukatif
+        untuk meningkatkan literasi siswa.
+    </p>
+</section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Perpustakaan Sekolah | Website Edukatif</p>
-    </footer>
+<!-- LAYANAN -->
+<section id="layanan" class="section">
+    <h2>Layanan</h2>
+    <div class="layanan">
+        <div>Peminjaman Buku</div>
+        <div>Pengembalian Buku</div>
+        <div>Kartu Anggota</div>
+        <div>Ruang Baca</div>
+    </div>
+</section>
+
+<!-- DAFTAR -->
+<section id="daftar" class="section bg-soft">
+    <h2>Daftar Anggota</h2>
+    <form class="form">
+        <input type="text" placeholder="Nama Lengkap">
+        <input type="email" placeholder="Email">
+        <input type="text" placeholder="Kelas">
+        <button type="submit">Daftar Sekarang</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Perpustakaan Sekolah Ceria</p>
+</footer>
 
 </body>
 </html>
