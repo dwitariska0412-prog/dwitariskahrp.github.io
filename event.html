@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Perpustakaan</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+        }
+
+        .navbar {
+            background: #4a90e2;
+            padding: 15px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .navbar a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .container {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .event-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 15px;
+            display: inline-block;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .event-card h3 {
+            color: #4a90e2;
+        }
+
+        .btn {
+            background: orange;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<div class="navbar">
+    <div>📚 PerpusCeria</div>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="koleksi.html">Koleksi</a>
+        <a href="event.html">Event</a>
+    </div>
+</div>
+
+<!-- CONTENT -->
+<div class="container">
+    <h1>📅 Event Perpustakaan</h1>
+    <p>Ikuti berbagai kegiatan menarik di perpustakaan!</p>
+
+    <div id="event-list"></div>
+</div>
+
+<!-- JAVASCRIPT -->
+<script>
+    const events = [
+        {
+            judul: "Lomba Membaca Cepat",
+            tanggal: "10 Mei 2026",
+            deskripsi: "Tunjukkan kemampuan membaca cepatmu!"
+        },
+        {
+            judul: "Bedah Buku Novel",
+            tanggal: "15 Mei 2026",
+            deskripsi: "Diskusi buku bersama komunitas literasi."
+        },
+        {
+            judul: "Workshop Menulis",
+            tanggal: "20 Mei 2026",
+            deskripsi: "Belajar menulis cerita yang menarik."
+        }
+    ];
+
+    const container = document.getElementById("event-list");
+
+    events.forEach(event => {
+        container.innerHTML += `
+            <div class="event-card">
+                <h3>${event.judul}</h3>
+                <p><b>${event.tanggal}</b></p>
+                <p>${event.deskripsi}</p>
+                <a href="#" class="btn">Daftar</a>
+            </div>
+        `;
+    });
+</script>
+
+</body>
+</html>
