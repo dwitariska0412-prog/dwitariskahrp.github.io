@@ -162,3 +162,47 @@ footer {
     padding: 20px;
     margin-top: 30px;
 }
+/* EVENT SECTION */
+.event-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #f9fbfd;
+}
+
+.event-section h2 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
+.event-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.event-item {
+    background: white;
+    border-radius: 10px;
+    width: 320px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.event-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event-item h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.event-item p {
+    font-size: 14px;
+    color: #666;
+}
