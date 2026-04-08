@@ -4,79 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Event Perpustakaan</title>
-    <link rel="stylesheet" href="styles.css">
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f7fa;
-        }
-
-        .navbar {
-            background: #4a90e2;
-            padding: 15px;
-            color: white;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .navbar a {
-            color: white;
-            margin: 0 10px;
-            text-decoration: none;
-        }
-
-        .container {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .event-card {
-            background: white;
-            border-radius: 10px;
-            padding: 20px;
-            margin: 15px;
-            display: inline-block;
-            width: 280px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .event-card h3 {
-            color: #4a90e2;
-        }
-
-        .btn {
-            background: orange;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 20px;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 10px;
-        }
-    </style>
+    <!-- SAMAKAN CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-    <div>📚 PerpusCeria</div>
-    <div>
-        <a href="index.html">Home</a>
-        <a href="koleksi.html">Koleksi</a>
-        <a href="event.html">Event</a>
-    </div>
-</div>
+<!-- NAVBAR (SAMA PERSIS DENGAN INDEX) -->
+<nav class="navbar">
+    <div class="logo">📚 PerpusCeria</div>
+    <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#koleksi">Koleksi</a></li>
+        <li><a href="index.html#tentang">Tentang Kami</a></li>
+        <li><a href="index.html#layanan">Layanan</a></li>
+        <li><a href="event.html">Event</a></li>
+        <li><a href="cv.html">Admin</a></li>
+        <li><a href="index.html#daftar" class="btn-nav">Daftar</a></li>
+    </ul>
+</nav>
 
 <!-- CONTENT -->
-<div class="container">
-    <h1>📅 Event Perpustakaan</h1>
+<section class="section">
+    <h2>📅 Event Perpustakaan</h2>
     <p>Ikuti berbagai kegiatan menarik di perpustakaan!</p>
 
-    <div id="event-list"></div>
-</div>
+    <div class="event-gallery" id="event-list"></div>
+</section>
 
 <!-- JAVASCRIPT -->
 <script>
@@ -102,7 +57,7 @@
 
     events.forEach(event => {
         container.innerHTML += `
-            <div class="event-card">
+            <div class="event-item">
                 <h3>${event.judul}</h3>
                 <p><b>${event.tanggal}</b></p>
                 <p>${event.deskripsi}</p>
